@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: lightsalmon;
+}
+.main1 {
+  height: 70vh;
+  width: 50vh;
+  border-radius: 5px;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  flex: 1;
+  background: yellow;
+}
+
+.Password {
+  flex: 1;
+  background: green;
+}
+
+.remember-me {
+  flex: 1;
+  background: yellow;
+}
+
+.KeepMeSignedIn {
+  flex: 1;
+  background: green;
+}
