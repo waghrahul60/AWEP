@@ -3,20 +3,13 @@ var likeCounter = 1;
 function commentHere() {
   let userComment = document.querySelector("#inputId1").value; // we are not using innerHTML wy bcz this is a form element
 
-  // create new element
-  let newElement = document.createElement("div");
-  newElement.style.display = "flex";
-  newElement.style.justifyContent = "space-between";
-  newElement.style.marginBottom = "4px";
-
-  let child1 = document.createElement("div");
-  child1.textContent = userComment;
-  let child2 = document.createElement("button");
-  child2.textContent = "Deletee";
-
-  // relationship among newly created elemtns
-  newElement.appendChild(child1);
-  newElement.appendChild(child2);
+  //  we are not goint to use createElement
+  const newElement = document
+    .querySelector("#referenceCommentId")
+    .cloneNode(true);
+  newElement.removeAttribute("id"); //good practice to keep unique id.
+  newElement.style.visibility = "visible";
+  newElement.children[0].innerHTML = userComment;
 
   // comment box elment
   const commentBox = document.querySelector("#commentBox");
@@ -34,4 +27,8 @@ function likeHere() {
 
   let btnElement = document.querySelector("#btnid");
   btnElement.innerHTML = "Like " + likeCounter;
+}
+
+function deleteComment(btnElement) {
+  btnElement.parentElement.remove();
 }

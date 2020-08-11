@@ -1,13 +1,11 @@
-var commentCounter = 1;
 var likeCounter = 1;
 
 function commentHere() {
-  let UserComment = document.querySelector("#inputid1").value; //we are not using innerHTML  becose its a form element
+  let userComment = document.querySelector("#inputId1").value; // we are not using innerHTML wy bcz this is a form element
+
   // create new element
   const newElement = document.createElement("div");
-  //newElement.textContent = "User Comment ..." + commentCounter; //concatnate the counter
-
-  newElement.textContent = UserComment;
+  newElement.textContent = userComment; // removed the hardcode with user comment
 
   // add styling to new element
   newElement.style.background = "royalblue"; // values must be in double quotes or single quote
@@ -17,13 +15,12 @@ function commentHere() {
   // comment box elment
   const commentBox = document.querySelector("#commentBox");
 
-  // append the new element to parent at the end
+  // now we want to add the element at the top.
   // commentBox.appendChild(newElement);
-
-  //add element at start
   commentBox.insertBefore(newElement, commentBox.firstChild);
 
-  document.querySelector("#inputid1").value = "";
+  // clean the input box
+  document.querySelector("#inputId1").value = "";
 }
 
 function likeHere() {

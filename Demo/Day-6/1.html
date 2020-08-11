@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day6 | 1</title>
+    <title>Document</title>
 
     <script src="1.js"></script>
   </head>
   <body>
     <div>Someone has posted something!!!</div>
 
+    <div style="margin-top: 4px; margin-bottom: 4px;">
+      <input
+        type="text"
+        name=""
+        id="inputId1"
+        placeholder="comment using this"
+      />
+    </div>
+
     <div>
-      <div style="margin: auto;">
-        <input
-          type="text"
-          type="text"
-          id="inputid1"
-          placeholder="comment using this"
-        />
-      </div>
       <!-- logic for like now-->
       <button id="btnid" onclick="likeHere()">Like 1</button>
 
@@ -26,14 +27,6 @@
     </div>
 
     <!-- Will Contain all the comment-->
-
-    <div id="commentBox">
-      <div style="display: flex;">
-        sample comment
-      </div>
-      <div>
-        delete
-      </div>
-    </div>
+    <div id="commentBox"></div>
   </body>
 </html>
