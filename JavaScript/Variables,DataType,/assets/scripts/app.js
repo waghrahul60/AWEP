@@ -1,5 +1,14 @@
-let currentResult = 0;
+const defaultRsult = 0;
+let currentResult = defaultRsult;
 
-currentResult = currentResult + 10;
+function add(num1, num2) {
+  const result = num1 + num2;
+  //alert("The result is " + result);   //Alert Box
+  return result;
+}
 
-outputResult(currentResult, "");
+currentResult = add(8, 9);
+
+let calculationDescription = `(${defaultRsult}+10) * 3 / 2 - 1`;
+
+outputResult(currentResult, calculationDescription);
