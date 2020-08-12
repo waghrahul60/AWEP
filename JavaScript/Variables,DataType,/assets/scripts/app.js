@@ -7,8 +7,11 @@ function add(num1, num2) {
   return result;
 }
 
+addBtn.addEventListener("Click Here", add);
+
+/*
 currentResult = add(8, 9);
 
-let calculationDescription = `(${defaultRsult}+10) * 3 / 2 - 1`;
+let calculationDescription = `(${defaultRsult}+10) * 3 / 2 - 1`;*/
 
 outputResult(currentResult, calculationDescription);
