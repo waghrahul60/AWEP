@@ -18,6 +18,11 @@
 
     <title>Hello, world!</title>
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -27,6 +32,7 @@
 
     <div class="container-fluid bg-white chatbox shadow-lg rounded">
       <div class="row">
+        <!--LeftColumn-->
         <div class="col-md-4">
           <div class="card">
             <div class="card-header">
@@ -37,7 +43,8 @@
               </div>
               <div class="col-md-5"></div>
             </div>
-            <ul class="list-group">
+            <ul class="list-group list-group-flush">
+              <!--to remove Double Border-->
               <li class="list-group-item" style="background: #f8f8f8;">
                 <input
                   type="text"
@@ -47,13 +54,15 @@
                   class="form-control form-rounded"
                 />
               </li>
-              <li class="list-group-item">
-                <div class="row friend-pic">
+              <!--UserProfileBlock-->
+              <!--HoverColorChange-->
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
                   <!--ForRefChat-->
                   <div class="col-md-2">
                     <img src="img/pp1.png" alt="" class="friend-pic" />
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-2" style="cursor: pointer;">
                     <div class="name">
                       Rahul Wagh
                     </div>
@@ -61,11 +70,34 @@
                   </div>
                 </div>
               </li>
+              <!--//UserProfileBlock-->
             </ul>
           </div>
         </div>
-
-        <div class="col-md-8"></div>
+        <!--//LeftColumn-->
+        <!--RightColumn-->
+        <div class="col-md-8">
+          <div class="card-header">
+            <!--RighrHeaderBar-->
+            <div class="row">
+              <div class="col-md-2">
+                <img src="img/pp1.png" alt="" class="profile-pic" />
+              </div>
+              <div class="col-md-6">
+                <div class="name">
+                  Rahul Wagh
+                </div>
+                <div class="under-name">Last Seen 9/8/2020</div>
+              </div>
+              <div class="col-md-4 icon">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-paperclip ml-4"></i>
+                <i class="fas fa-ellipsis-v ml-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//RightColumn-->
       </div>
     </div>
 
