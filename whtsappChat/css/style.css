@@ -27,6 +27,7 @@ body {
   height: calc(100% - 4em);
   width: 95%;
   margin-top: 2em;
+  padding: 0px;
 }
 
 .profile-pic {
