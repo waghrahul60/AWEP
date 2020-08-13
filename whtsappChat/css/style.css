@@ -37,3 +37,22 @@ body {
 .form-rounded {
   border-radius: 1rem;
 }
+
+.friend-pic {
+  height: 50px;
+  width: 50px;
+}
+
+.name {
+  font-weight: 600;
+  color: #000;
+  width: 28em;
+}
+
+.under-name {
+  font-size: 12px;
+  line-height: 15px;
+  max-height: 15px;
+  width: 28em;
+  color: #737a7a;
+}
