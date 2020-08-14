@@ -30,7 +30,7 @@ let readAndAddComment = function (btnElementComment) {
 
   commentBox.insertBefore(newElement, commentBox.firstChild);
 
-  commentBox.children[0].value = "";
+  userComment.value = " ";
 
   //readip
 };
