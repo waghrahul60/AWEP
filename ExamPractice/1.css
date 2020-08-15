@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 50vw;
+  height: 50vh;
+  background: cadetblue;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px #888888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.card-1 {
+  height: 30vh;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-2 {
+  height: 30%;
+  width: 100%;
+  flex: 1;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.commentB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputbox {
+  box-sizing: border-box;
+}
+.error {
+  visibility: hidden;
+}
