@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+
+    <script src="1.js"></script>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <div class="contaainer-fulid">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div class="row">
+            <div
+              class="col bg-primary d-flex justify-content-center align-items-center"
+              style="height: 200px; font-size: 40px; font-weight: 900;"
+            >
+              hello CDAC
+            </div>
+          </div>
+          <div class="row bg-primary justify-content-center">
+            <h2 style="visibility: hidden; color: tomato;" id="error">error</h2>
+          </div>
+
+          <!--like-->
+          <div class="row">
+            <div class="col-2 p-0">
+              <button
+                class="btn btn-outline-danger btn-block"
+                onclick="likeKaro(this)"
+              >
+                Like <span>0</span>
+              </button>
+            </div>
+            <div class="col-8 p-0">
+              <input
+                type="text"
+                placeholder="Comment Here...."
+                class="form-control"
+                id="inputComment"
+              />
+            </div>
+            <div class="col-2 p-0">
+              <button
+                class="btn btn-outline-success btn-block"
+                onclick="readValue(this)"
+              >
+                Comment
+              </button>
+            </div>
+          </div>
+
+          <!--commentBox-->
+          <div class="d-flex flex-column">
+            <div class="row">
+              <div class="col-10 p-0">
+                sample comment here
+              </div>
+              <div class="col-2 p-0">
+                <button
+                  class="btn btn-outline-danger btn-block"
+                  onclick="deleteMe(this)"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
