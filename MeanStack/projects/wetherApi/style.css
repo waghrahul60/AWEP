@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.searchBox {
+  width: 100px;
+}
+
+.city {
+  height: 100px;
+}
+
+.img1 {
+  width: 600px;
+  height: 100px;
+}

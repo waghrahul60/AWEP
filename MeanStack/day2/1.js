@@ -14,6 +14,8 @@ let callAjax = function () {
 
 // DOM HTML, CSS
 let domLogic = function (refJson) {
+  console.log(refJson);
+
   let parent = document.querySelector("#parent");
 
   for (let i = 0; i < refJson.data.length; i++) {
@@ -24,3 +26,12 @@ let domLogic = function (refJson) {
     parent.insertBefore(newElement, parent.firstChild);
   }
 };
+
+/**
+ * MIN. REQUERMENT :: SERVER PROGRAAM (API)
+ *
+ * AJAX - How to connect or how to talk with server
+ * RESPONSE (JSON/XML) - Knowledge
+ *
+ * Fundamental Knowledge HTML, CSS, DOCUMENT, DOM OPERATION (PAINT THE PAGE)
+ */
