@@ -1,0 +1,26 @@
+<p>Property Binding</p>
+<h4>Event Binding</h4>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)" />
+<p>{{ serverName }}</p>
+<hr />
+<h4>Two Way Binding</h4>
+<input type="text" class="form-control" />
+<!--[(ngModel)]="serverName"-->
+<p>{{ serverName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+
+<h4>Replace sting interpolation with Property Binding</h4>
+<p>{{ allowNewServer }}</p>
+<p [innerText]="allowNewServer"></p>
+
+<hr />
+<p>{{ serverCreationStatus }}</p>
+
+<app-server></app-server>
+<app-server></app-server>

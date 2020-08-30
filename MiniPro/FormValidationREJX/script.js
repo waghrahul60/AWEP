@@ -9,7 +9,7 @@ let phonevalid = false;
 console.log(name, email, phone);
 name.addEventListener("blur", () => {
   console.log("name is blured");
-  let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
+  let regex = /^[a-zA-Z]([0-9a-zA-Z]){5,10}$/; // /^[a-zA-Z]([])   $/
   let str = name.value;
   console.log(str, regex);
   if (regex.test(str)) {
@@ -24,6 +24,13 @@ name.addEventListener("blur", () => {
 email.addEventListener("blur", () => {
   console.log("email is blured");
   let regex = /^([_\-\.a-zA-Z0-9]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]){2,7}$/;
+
+  /^([a-zA_Z0-9\.@_]+)@([a-zA_Z0-9\.-_]{2,20}).([a-z]{2,3})(\.[a-z]{2,10})$/;
+
+  //   kunal_OP.123@gmail.com
+
+  //    /^ ([_\-\.a-zA-Z0-9]) @ () . ()   $/
+
   let str = email.value;
   console.log(str, regex);
   if (regex.test(str)) {

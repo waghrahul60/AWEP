@@ -1,0 +1,9 @@
+<div>{{ title }}</div>
+<div>{{ myPost }}</div>
+
+<button (click)="increment()">Like{{ counter }}</button>
+<button (click)="addComment()">Comment Here</button>
+<button (click)="decrement()">dislike</button>
+<div id="parent">
+  <div *ngFor="let item of commentlist">{{ Comment }}</div>
+</div>
