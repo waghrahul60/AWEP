@@ -1,3 +1,20 @@
+<p>Directives nglf</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<p *ngIf="serverCreated; else noServer">
+  Server Was Created Serer Name is {{ serverName }}
+</p>
+
+<ng-template #noServer>
+  <p #noServer>NO Server Created</p>
+</ng-template>
+
+<hr />
 <p>Property Binding</p>
 <h4>Event Binding</h4>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)" />
@@ -24,3 +41,6 @@
 
 <app-server></app-server>
 <app-server></app-server>
+
+<hr />
+<app-server *ngFor="let server of servers"></app-server>

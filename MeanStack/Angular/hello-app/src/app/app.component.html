@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row bg-dark" style="height: 65px">
+    <div class="col d-flex align-items-center">
+      <span class="h5" style="color: tomato"> MY</span>
+      <span class="h4" style="color: royalblue"> app</span>
+    </div>
+    <div class="col d-flex justify-content-end align-items-center">
+      <button
+        class="btn btn-sm btn-secondary mr-1"
+        (click)="gotoRoute('Achivement')"
+      >
+        Achivement
+      </button>
+      <button
+        class="btn btn-sm btn-secondary mr-1"
+        (click)="gotoRoute('Projects')"
+      >
+        Projects
+      </button>
+      <button
+        class="btn btn-sm btn-secondary mr-1"
+        (click)="gotoRoute('Education')"
+      >
+        Education
+      </button>
+      <button class="btn btn-sm btn-secondary">contact-us</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

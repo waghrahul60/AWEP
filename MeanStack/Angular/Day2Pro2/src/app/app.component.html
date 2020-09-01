@@ -1,0 +1,19 @@
+<div>
+  <h4>s;lfkgj</h4>
+  <input type="text" placeholder="{{ taskPlaceHolder }}" />
+  <button class="btn btn-primary" value="Add Task">Add Task</button>
+</div>
+
+<div>
+  <h4>s;lfkgj</h4>
+  <input type="text" [placeholder]="taskPlaceHolder" [formControl]="task" />
+  <button class="btn btn-primary" value="Add Task" (click)="addTask()">
+    Add Task
+  </button>
+</div>
+
+<div>value :: {{ task.value }}</div>
+
+<div>
+  <div *ngIf="let item of taskList">{{ item }}</div>
+</div>
