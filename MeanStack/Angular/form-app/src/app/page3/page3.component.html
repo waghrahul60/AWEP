@@ -1,0 +1,58 @@
+<p>Using Form Builder</p>
+
+<div [formGroup]="myFormGroup">
+  <div>
+    <input type="text" formControName="username" />
+    <label
+      for=""
+      style="color: red; font-size: x-small"
+      *ngIf="
+        myFormGroup.get('username').invalid &&
+        myFormGroup.get('username').touched
+      "
+      >Username Require</label
+    >
+  </div>
+
+  <div>
+    <input type="text" formControName="username" />
+    <label
+      for=""
+      style="color: red; font-size: x-small"
+      *ngIf="
+        myFormGroup.get('username').invalid &&
+        myFormGroup.get('username').touched
+      "
+      >Username Require</label
+    >
+  </div>
+
+  <div>
+    <input type="text" formControName="username" />
+    <label
+      for=""
+      style="color: red; font-size: x-small"
+      *ngIf="
+        myFormGroup.get('username').invalid &&
+        myFormGroup.get('username').touched
+      "
+      >Username Require</label
+    >
+  </div>
+
+  <div>
+    <input type="text" formControName="username" />
+    <label
+      for=""
+      style="color: red; font-size: x-small"
+      *ngIf="
+        myFormGroup.get('username').invalid &&
+        myFormGroup.get('username').touched
+      "
+      >Username Require</label
+    >
+  </div>
+  <div>
+    <button>Register</button>
+  </div>
+</div>

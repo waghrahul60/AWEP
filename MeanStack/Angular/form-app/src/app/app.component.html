@@ -1,0 +1,18 @@
+<input type="text" placeholder="Enter Name" [formControl]="nameControl" />
+
+<button [disabled]="!nameControl.valid" (click)="readFormValue()">
+  Register
+</button>
+
+<p></p>
+<div>{{ nameControl.value }}/{{ nameControl.valid }}</div>
+<hr />
+
+<app-page1></app-page1>
+
+<hr />
+
+<app-page2></app-page2>
+
+<hr />
+<app-page3></app-page3>
