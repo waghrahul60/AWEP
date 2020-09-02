@@ -1,58 +1,61 @@
-<p>Using Form Builder</p>
+<h1>From Page 3 Component :: Using Form Builder</h1>
 
-<div [formGroup]="myFormGroup">
+<div [formGroup]="fbFormGroup">
   <div>
-    <input type="text" formControName="username" />
+    <input type="text" formControlName="username" />
     <label
       for=""
-      style="color: red; font-size: x-small"
+      style="color: red; font-size: small"
       *ngIf="
-        myFormGroup.get('username').invalid &&
-        myFormGroup.get('username').touched
+        fbFormGroup.get('username').invalid &&
+        fbFormGroup.get('username').touched
       "
-      >Username Require</label
+      >Usenrmae Requried</label
     >
   </div>
 
   <div>
-    <input type="text" formControName="username" />
+    <input type="text" formControlName="password" />
     <label
       for=""
-      style="color: red; font-size: x-small"
+      style="color: red; font-size: small"
       *ngIf="
-        myFormGroup.get('username').invalid &&
-        myFormGroup.get('username').touched
+        fbFormGroup.get('password').invalid &&
+        fbFormGroup.get('password').touched
       "
-      >Username Require</label
+      >Password Requried</label
     >
   </div>
 
   <div>
-    <input type="text" formControName="username" />
+    <input type="text" formControlName="email" />
     <label
       for=""
-      style="color: red; font-size: x-small"
+      style="color: red; font-size: small"
       *ngIf="
-        myFormGroup.get('username').invalid &&
-        myFormGroup.get('username').touched
+        fbFormGroup.get('email').invalid && fbFormGroup.get('email').touched
       "
-      >Username Require</label
+      >Email Requried</label
     >
   </div>
 
   <div>
-    <input type="text" formControName="username" />
+    <input type="text" formControlName="mobile" />
     <label
       for=""
-      style="color: red; font-size: x-small"
+      style="color: red; font-size: small"
       *ngIf="
-        myFormGroup.get('username').invalid &&
-        myFormGroup.get('username').touched
+        fbFormGroup.get('mobile').invalid && fbFormGroup.get('mobile').touched
       "
-      >Username Require</label
+      >MObile Requried</label
     >
   </div>
+
   <div>
-    <button>Register</button>
+    <button [disabled]="!fbFormGroup.valid" (click)="registerUser()">
+      Register
+    </button>
   </div>
 </div>
+
+{{ fbFormGroup.value | json }}

@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  Validators,
+  FormGroup,
+  FormControl,
+} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -8,22 +13,31 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./page3.component.css'],
 })
 export class Page3Component implements OnInit {
-  myFormGroup = this.fb.group({
+  /*formGroup = new FormGroup({
+    username: new FormControl(),
+    password: new FormControl(),
+    email: new FormControl(),
+    mobile: new FormControl(),
+  });*/
+
+  fbFormGroup = this.fb.group({
     username: ['', Validators.required],
     password: ['', Validators.required],
     email: ['', Validators.required],
     mobile: ['', Validators.required],
   });
 
+  // using form builder service
   constructor(private fb: FormBuilder, private http: HttpClient) {}
 
   ngOnInit(): void {}
 
   async registerUser() {
-    const data = this.myFormGroup.value;
+    const data = this.fbFormGroup.value;
 
     const url = 'http://localhost:3000/adduser';
     await this.http.post(url, data).toPromise();
-    this.myFormGroup.reset();
+
+    this.fbFormGroup.reset();
   }
 }
